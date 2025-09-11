@@ -1,0 +1,90 @@
+@use './colors.scss' as colors;
+@use './mixin.scss' as mixin;
+@use './fonts.scss';
+
+html {
+  font-family: 'RobotoFlex Inter-VariableFont_opsz', sans-serif;
+  font-display: swap;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: colors.$dark;
+  color: colors.$white;
+  font-size: 16px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  font-size: 16px;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: colors.$white;
+  // font-weight: 500;
+  // font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+h1 {
+  font-size: 6rem;
+  font-family: 'Poppins-700';
+  font-display: swap;
+  margin: 0;
+  @include mixin.pc1450px {
+    font-size: 4rem;
+  }
+  @include mixin.phone500px {
+    font-size: 2.5rem;
+  }
+}
+h2 {
+  font-size: 3rem;
+  font-family: 'Poppins-700';
+  font-display: swap;
+  @include mixin.pc1450px {
+    font-size: 2.7rem;
+  }
+  @include mixin.phone500px {
+    font-size: 1.7rem;
+  }
+}
+h3 {
+  font-size: 2rem;
+  font-family: 'Poppins-600';
+  font-display: swap;
+  @include mixin.pc1450px {
+    font-size: 1.4rem;
+  }
+  @include mixin.phone500px {
+    font-size: 1rem;
+  }
+}
+h4 {
+  font-display: swap;
+  font-size: 20px;
+  margin: 0;
+}
+p {
+  font-display: swap;
+  font-size: 20px;
+  line-height: 1.6rem;
+  color: colors.$white;
+  font-weight: 500;
+  margin: 0;
+  font-family: 'RobotoFlex Inter-VariableFont_opsz', sans-serif;
+  @include mixin.pc1450px {
+    font-size: 1.2rem;
+  }
+  @include mixin.phone500px {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+  }
+}
