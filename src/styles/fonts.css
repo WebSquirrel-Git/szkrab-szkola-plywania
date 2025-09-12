@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../app/fonts/quicksand/Quicksand-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900; /* Zakres wagi dla fontu zmiennego */
+  font-optical-sizing: auto; /* Automatyczne dostosowanie rozmiaru optycznego */
+  font-display: swap;
+}
