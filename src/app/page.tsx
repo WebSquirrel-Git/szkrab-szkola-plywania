@@ -21,7 +21,7 @@ export default function Home() {
       <Image src={HeroBg} fill alt='Basen Wolbrom'/>
       <div className='flex flex-col z-10 lg:w-[50%] sm:w-[75%] w-[90%] gap-6 items-center justify-center text-center text-white'>
         <h1>Nauka pływania na basenie w Wolbromiu</h1>
-        <h3 className='!font-medium'>Oferujemy zajęcia pływania w kameralnych grupach oraz indywidualnie. Pierwsze zajęcia grupowe są darmowe.</h3>
+        <h3 className='!font-medium'>Oferujemy zajęcia nauki pływania w kameralnych grupach oraz w formie lekcji indywidualnych i dwuosobowych. Pierwsze zajęcia grupowe są darmowe.</h3>
      <ButtonNavRounded href='/' label='Sprawdź podział naszych grup'/>
      <div className='hidden sm:flex sm:flex-row flex-col gap-6 pt-8'>
       <span className='flex flex-row gap-4 items-center'>
@@ -41,7 +41,7 @@ export default function Home() {
     </div>
    
     <div className='flex flex-col  w-full 2xl:pl-[250px] 2xl:pr-[250px] lg:pl-[130px] lg:pr-[130px] justify-center items-center'>
-      <div className='flex flex-col w-full py-[100px] lg-px-0 px-4 items-center sm:gap-[100px] gap-[50px]'>
+      <div className='flex flex-col w-full py-[100px] lg-px-0 px-4 items-center md:gap-[100px] gap-[50px]'>
         <WhyUs/>
         <h2 className='text-center'>Podział zajęć grupowych</h2>
         <div className='flex flex-col gap-8 justify-center items-center'>
@@ -58,9 +58,10 @@ export default function Home() {
         </div>
          <div className='flex flex-col lg:flex-row justify-center gap-12 items-center'>
         <div className='flex flex-col gap-8 xl:w-[520px] w-auto'>
-          <h2 className='text-center lg:text-left'>Cześć, jestem Justyna</h2>
-          <p className='text-center lg:text-left'>Nasza szkoła to idealne miejsce dla każdego, kto chce nauczyć się pływać, doskonalić swoje umiejętności czy przygotować się do zawodów. Naszym celem jest nie tylko nauka pływania, ale również rozwijanie miłości do wody i sportu. Wierzymy, że pływanie to umiejętność, która przynosi radość, zdrowie i pewność siebie na całe życie. Dlatego staramy się, aby każdy nasz kurs był nie tylko skuteczny, ale również inspirujący i pełen pozytywnych emocji.</p>
-        <p className='text-center lg:text-left'>Nasza szkoła to idealne miejsce dla każdego, kto chce nauczyć się pływać, doskonalić swoje umiejętności czy przygotować się do zawodów. Naszym celem jest nie tylko nauka pływania, ale również rozwijanie miłości do wody i sportu. Wierzymy, że pływanie to umiejętność, która przynosi radość, zdrowie i pewność siebie na całe życie. Dlatego staramy się, aby każdy nasz kurs był nie tylko skuteczny, ale również inspirujący i pełen pozytywnych emocji.</p>
+          <h2 className='text-center lg:text-left'>Witaj w Szkole Szkrab!</h2>
+          <p className='text-center lg:text-left'>Szkoła Pływania Szkrab to miejsce, które powstało z pasji do pływania i aktywności fizycznej oraz chęci dzielenia się wiedzą i doświadczeniem z wszystkimi szkrabami chcącymi czuć się w wodzie pewnie i bezpiecznie.</p>
+        <p className='text-center lg:text-left'>Nazywam się Justyna Jurczyk, jestem magistrem wychowania fizycznego, instruktorką sportu o specjalizacji pływanie oraz instruktorką nauki pływania niemowląt. Swoją przygodę z pływaniem rozpoczęłam jako 7 letnia zawodniczka lokalnego klubu KS Wiking. Regularna aktywność fizyczna wdrażana od najmłodszych lat rozbudziła  we mnie pasję do sportu oraz chęć jej dzielenia z innymi.. Od ponad 6 lat prowadzę zajęcia nauki pływania dla dzieci powyżej 3 roku życia, młodzieży oraz osób dorosłych na każdym poziomie zaawansowania., a obecnie jestem również nauczycielem pływania w Krakowskim Szkolnym Ośrodku Sportu. </p>
+       <p className='text-center lg:text-left'>Zapraszam Cię na organizowane przeze mnie zajęcia nauki pływania na basenie w Wolbromiu! </p>
         </div>
         <Image src={JustynaImg} alt='Justyna' width={545} height={727} className='xl:w-[500px] h-fit lg:w-[40%] w-[90%] object-contain rounded-[80px]'/>
       </div>

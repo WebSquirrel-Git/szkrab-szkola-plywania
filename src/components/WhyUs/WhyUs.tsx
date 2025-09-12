@@ -44,7 +44,7 @@ export const WhyUs = () =>{
 
     return <div className=' flex flex-row w-full justify-center  flex-wrap gap-8'>
         {DATA.map((item,i)=><div key={i} className='flex flex-col justify-center items-center text-center gap-4 sm:w-[40%] lg:w-[340px] w-[300px]'>
-    <Image src={item.img} alt={item.alt} width={130} height={130} loading='eager' className='2xl:w-[130px] 2xl:h-[130px] xl:w-[100px] xl:h-[100px] md:w-[80px] md:h-[80px] w-[64px] h-[64px]'/>
+    <Image src={item.img} alt={item.alt} width={130} height={130} loading='eager' className=' xl:w-[100px] xl:h-[100px] md:w-[80px] md:h-[80px] w-[64px] h-[64px]'/>
 <p>{item.label}</p>
 </div>)}
 
