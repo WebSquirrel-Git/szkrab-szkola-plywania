@@ -22,7 +22,7 @@ export const GROUPS_LIST = [
         description:'Zajęcia dla dzieci rozpoczynających przygodę z pływaniem. Celem zajęć w tej grupie jest oswojenie kursantów ze środowiskiem wodnym i przyzwyczajenie ich twarzy, oczu oraz uszu do kontaktu z wodą. Na tym etapie nauki skupimy się przede wszystkim na wstępnej adaptacji kursantów do środowiska wodnego. Rozpoczniemy naukę prawidłowego wydechu do wody oraz swobodnego zanurzenia głowy pod wodę, nie zabraknie również nauki ćwiczeń wypornościowych - podstawowych pozycji na wodzie w leżeniu na plecach oraz na brzuchu. Podczas kursu w grupie meduz zwrócimy uwagę na naukę poprawnej pracy nóg do stylu dowolnego oraz grzbietowego i podejmiemy liczne próby przemieszczania się w wodzie z pomocą sprzętu wypornościowego oraz samodzielnego pływania strzałką na brzuchu i na plecach w pozycji na baczność. Na zajęciach pojawią się także próby pierwszych skoków do wody na nogi.'
     },
      {
-        name:'Ośmiornice',
+        name:'Meduzy',
         age:'8-12 lat',
         icon:OsmiorniceIcon,
         list:['Wielkość grupy - max. 6 osób ','Czas zajęć: 45 minut','Instruktor prowadzi zajęcia z brzegu'],

@@ -41,7 +41,7 @@ export default function Home() {
     </div>
    
     <div className='flex flex-col  w-full 2xl:pl-[250px] 2xl:pr-[250px] lg:pl-[130px] lg:pr-[130px] justify-center items-center'>
-      <div className='flex flex-col w-full py-[100px] lg-px-0 px-4 items-center md:gap-[100px] gap-[50px]'>
+      <div className='flex flex-col w-full py-[100px] lg-px-0 px-4 items-center md:gap-[100px] gap-[50px] z-10'>
         <WhyUs/>
         <h2 className='text-center'>Podział zajęć grupowych</h2>
         <div className='flex flex-col gap-8 justify-center items-center'>
