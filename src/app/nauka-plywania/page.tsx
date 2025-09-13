@@ -6,6 +6,25 @@ import { GROUPS_LIST } from '@/src/components/Groups/List';
 import { GroupDescription } from '@/src/components/Groups/GroupDescription';
 import { ContactForm } from '@/src/components/Forms/ContactForm/ContactForm';
 import { ButtonNavPhone } from '@/src/components/ui/buttons/ButtonNavPhone';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Nauka pływania w Wolbromiu',
+  description:
+    'Nasza szkoła oferuje zajęcia nauki pływania w grupach sześcioosobowych, oraz w formie lekcji indywidualnych i dwuosobowych. Sprawdź cennik i zapisz się na zajęcia!',
+  metadataBase: new URL('https://szkolaplywaniaszkrab.pl/nauka-plywania'),
+  alternates: {
+    canonical: 'https://szkolaplywaniaszkrab.pl/nauka-plywania',
+    languages: {
+      'pl-PL': '/pl-PL',
+    },
+  },
+  robots: {index: true, follow: true},
+  openGraph: {
+    images: '/og-image.png',
+  },
+};
+
 export default function NaukaPlywania(){
 
     return(
@@ -19,8 +38,8 @@ export default function NaukaPlywania(){
       <Image src={HeroBg} fill alt='Basen Wolbrom'/>
       <div className='flex flex-col z-10 lg:w-[50%] sm:w-[75%] w-[90%] gap-6 items-center justify-center text-center text-white'>
         <h1>Nauka pływania dla Dzieci, Młodzieży i Dorosłych</h1>
-        <h3 className='!font-medium'>Pierwsza lekcja grupowa jest DARMOWA.</h3>
-     <ButtonNavRounded href='/' label='Zapisz się na lekcję próbną'/>
+        <h3 className='!font-medium'>Pierwsza lekcja grupowa jest DARMOWA</h3>
+     <ButtonNavRounded href='#kontakt' label='Zapisz się na lekcję próbną'/>
   
       </div>
     </div>
@@ -59,19 +78,19 @@ export default function NaukaPlywania(){
  <h3 className='text-mint'>Zapisz się na DARMOWĄ grupową lekcję próbną!</h3>
  <ButtonNavRounded label='Zapisz się na darmową lekcję próbną' href=''/>
         </div>
-       <h2>Podział grup</h2>
+       <h2 id='grupy'>Podział grup</h2>
        <div className='flex xl:flex-row flex-col gap-16 justify-center flex-wrap xl:items-start items-center'>
         {GROUPS_LIST.map((group,i)=><GroupDescription {...group} key={i}/>)}
        </div>
        <h2>Odrabianie zajęć</h2>
        <p className='text-center'>Kursanci mogą odwołać i odrobić każdą lekcje zaplanowaną w ramach kursu. Warunkiem możliwości odrobienia zajęć jest zgłoszenie nieobecności na zajęciach nie później niż na  8 godzin przed rozpoczęciem lekcji. Nieobecność na lekcji należy zgłosić do biura szkoły telefonicznie 506 764 009 lub mailowo biuro.szkrab@gmail.com. Każdą prawidłowo zgłoszoną nieobecność klienci mogą odrobić w innym terminie niż ich regularny termin zajęć. W celu ustalenia terminu odrabiania zajęć prosimy o kontakt z biurem. </p>
-        <h2>Zapisz się na zajęcia</h2>
-        <div className='flex flex-col-reverse xl:flex-row justify-center xl:items-end items-center xl:gap-0 gap-8'>
-          <div className='flex xl:pr-[50px] xl:w-[40%] sm:w-[500px] w-full xl:border-r-[5px] border-mint'>
+        <h2 id='kontakt'>Zapisz się na zajęcia</h2>
+        <div  className='flex flex-col-reverse lg:flex-col justify-center  items-center gap-8'>
+          <div className='flex  w-full'>
 <ContactForm/>
           </div>
-          <div className='xl:w-[40%] sm:w-[500px] w-full flex flex-col justify-end xl:pl-[50px]  gap-4 xl:text-left text-center'>
-<p>Nasza szkoła to idealne miejsce dla każdego, kto chce nauczyć się pływać, doskonalić swoje umiejętności czy przygotować się do zawodów. Naszym celem jest nie tylko nauka pływania, ale również rozwijanie miłości do wody i sportu. Wierzymy, że pływanie to umiejętność, która przynosi radość, zdrowie i pewność siebie na całe życie. Dlatego staramy się, aby każdy nasz kurs był nie tylko skuteczny, ale również inspirujący i pełen pozytywnych emocji.</p>
+          <div className=' w-full flex flex-col justify-center items-center gap-4 text-center'>
+<p>Wypełnij formularz kontaktowy, a nasze biuro skontaktuje się z Tobą w celu ustalenia dogodnego terminu zajęć.</p>
           <ButtonNavPhone/>
           </div>
         </div>

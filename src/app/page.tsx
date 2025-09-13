@@ -6,6 +6,25 @@ import { WhyUs } from '../components/WhyUs/WhyUs';
 import JustynaImg from '@/public/assets/images/justyna.jpg'
 import { GROUPS_LIST } from '../components/Groups/List';
 import { GroupLink } from '../components/Groups/GroupLink';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Lekcje pływania w Wolbromiu | Szkoła Pływania Szkrab',
+  description:
+    'Szkoła pływania Szkrab zaprasza na lekcje nauki pływania w Wolbromiu. Zajęcia organizowane są dla młodzieży, dzieci i dorosłych. Pierwsza lekcja grupowa jest DARMOWA.',
+  metadataBase: new URL('https://szkolaplywaniaszkrab.pl'),
+  alternates: {
+    canonical: 'https://szkolaplywaniaszkrab.pl',
+    languages: {
+      'pl-PL': '/pl-PL',
+    },
+  },
+  robots: {index: true, follow: true},
+  openGraph: {
+    images: '/og-image.png',
+  },
+};
+
 export default function Home() {
   return (
     //  bg-[url(/assets/images/background_crabs.svg)] bg-contain
@@ -14,9 +33,7 @@ export default function Home() {
       <Image src={BackgroundCrabs} alt='Kraby' fill={true} className='object-contain max-h-screen'/>
     
     </div>
-    <div className="flex flex-col 
-   
-    ">
+    <div className="flex flex-col">
     <div className='flex w-full h-screen relative items-center justify-center pt-[162px]'>
       <Image src={HeroBg} fill alt='Basen Wolbrom'/>
       <div className='flex flex-col z-10 lg:w-[50%] sm:w-[75%] w-[90%] gap-6 items-center justify-center text-center text-white'>
@@ -45,7 +62,7 @@ export default function Home() {
         <WhyUs/>
         <h2 className='text-center'>Podział zajęć grupowych</h2>
         <div className='flex flex-col gap-8 justify-center items-center'>
-<div className='flex flex-col sm:flex-row flex-wrap xl:gap-16 gap-4 justify-center'>
+<div className='flex flex-col sm:flex-row flex-wrap xl:gap-16 gap-10 justify-center'>
           {GROUPS_LIST.slice(0,GROUPS_LIST.length-2).map((group,i)=><GroupLink key={i} {...group}/>)}
         </div>
         <h3 className='text-center'>Pierwsze zajęcia grupowe są próbne i darmowe!</h3>
@@ -57,10 +74,10 @@ export default function Home() {
           {GROUPS_LIST.slice(GROUPS_LIST.length-2).map((group,i)=><GroupLink key={i} {...group}/>)}
         </div>
          <div className='flex flex-col lg:flex-row justify-center gap-12 items-center'>
-        <div className='flex flex-col gap-8 xl:w-[520px] w-auto'>
+        <div className='flex flex-col gap-4 xl:w-[520px] w-auto'>
           <h2 className='text-center lg:text-left'>Witaj w Szkole Szkrab!</h2>
           <p className='text-center lg:text-left'>Szkoła Pływania Szkrab to miejsce, które powstało z pasji do pływania i aktywności fizycznej oraz chęci dzielenia się wiedzą i doświadczeniem z wszystkimi szkrabami chcącymi czuć się w wodzie pewnie i bezpiecznie.</p>
-        <p className='text-center lg:text-left'>Nazywam się Justyna Jurczyk, jestem magistrem wychowania fizycznego, instruktorką sportu o specjalizacji pływanie oraz instruktorką nauki pływania niemowląt. Swoją przygodę z pływaniem rozpoczęłam jako 7 letnia zawodniczka lokalnego klubu KS Wiking. Regularna aktywność fizyczna wdrażana od najmłodszych lat rozbudziła  we mnie pasję do sportu oraz chęć jej dzielenia z innymi.. Od ponad 6 lat prowadzę zajęcia nauki pływania dla dzieci powyżej 3 roku życia, młodzieży oraz osób dorosłych na każdym poziomie zaawansowania., a obecnie jestem również nauczycielem pływania w Krakowskim Szkolnym Ośrodku Sportu. </p>
+        <p className='text-center lg:text-left'>Nazywam się Justyna Jurczyk, jestem magistrem wychowania fizycznego, instruktorką sportu o specjalizacji pływanie oraz instruktorką nauki pływania niemowląt. Swoją przygodę z pływaniem rozpoczęłam jako 7 letnia zawodniczka lokalnego klubu KS Wiking. Regularna aktywność fizyczna wdrażana od najmłodszych lat rozbudziła  we mnie pasję do sportu oraz chęć jej dzielenia z innymi. Od ponad 6 lat prowadzę zajęcia nauki pływania dla dzieci powyżej 3 roku życia, młodzieży oraz osób dorosłych na każdym poziomie zaawansowania. Obecnie jestem również nauczycielem pływania w Krakowskim Szkolnym Ośrodku Sportu. </p>
        <p className='text-center lg:text-left'>Zapraszam Cię na organizowane przeze mnie zajęcia nauki pływania na basenie w Wolbromiu! </p>
         </div>
         <Image src={JustynaImg} alt='Justyna' width={545} height={727} className='xl:w-[500px] h-fit lg:w-[40%] w-[90%] object-contain rounded-[80px]'/>

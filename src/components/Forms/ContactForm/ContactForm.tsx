@@ -71,7 +71,9 @@ export const ContactForm = () =>{
    
   };
 
-    return <form onSubmit={handleSubmit(onSubmit)} className='w-full h-fit'>
+    return <form onSubmit={handleSubmit(onSubmit)} className='w-full h-fit flex flex-col justify-center items-center'>
+      <div className=' flex flex-col lg:flex-row justify-center w-full lg:gap-6 gap-0 items-center'>
+      <div className='flex flex-col xl:pr-[50px] xl:w-[40%] sm:w-[400px] w-[80%]'>
         <label className='flex p-2.5 pb-1'>Imię</label>
         <div className="w-full h-10 flex flex-row items-center justify-center border-1 border-mint rounded-full py-2.5 gap-3 pl-2.5">
          
@@ -112,6 +114,8 @@ export const ContactForm = () =>{
         {errors.telephone && (
           <p className="text-red-500 pl-2.5 !text-sm">{errors.telephone.message}</p>
         )}
+        </div>
+        <div className='flex flex-col xl:pr-[50px] xl:w-[40%] sm:w-[400px] w-[80%]'>
         <label className='flex p-2.5 pb-1'>Wiek uczestnika</label>
         <div className="w-full h-10 flex flex-row items-center justify-center border-1 border-mint rounded-full py-2.5 gap-3 pl-2.5">
          
@@ -147,7 +151,9 @@ export const ContactForm = () =>{
          {errors.lessonType && (
           <p className="text-red-500 pl-2.5 !text-sm">{errors.lessonType.message}</p>
         )}
-        <button type='submit' className='cursor-pointer mt-8 w-full font-semibold flex flex-row text-[14px] gap-2 sm:text-[16px] px-9 py-3 items-center  bg-orange rounded-[25px] text-white justify-center'>
+        </div>
+        </div>
+        <button type='submit' className='cursor-pointer mt-8 w-fit font-semibold flex flex-row text-[14px] gap-2 sm:text-[16px] px-9 py-3 items-center  bg-orange rounded-[25px] text-white justify-center'>
             {status} <Image src={SendIcon} alt='Wyślij e-mail' width={16} height={16}/>
            
         </button>
