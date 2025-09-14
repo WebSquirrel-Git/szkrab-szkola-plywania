@@ -115,7 +115,7 @@ export default function NaukaPlywania() {
               otrzymają na początku każdego miesiąca drogą mailową.
             </p>
             <div className="flex flex-col md:gap-8 gap-4 items-center">
-              <h3 className="text-mint">
+              <h3 className="text-mint text-center">
                 Zapisz się na DARMOWĄ grupową lekcję próbną!
               </h3>
               <ButtonNavRounded

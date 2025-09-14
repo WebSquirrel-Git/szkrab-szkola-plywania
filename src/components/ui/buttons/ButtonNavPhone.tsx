@@ -7,7 +7,7 @@ export const ButtonNavPhone = () => {
   return (
     <Link
       href="tel:+48506764009"
-      className="w-full group transition-all duration-500 hover:bg-white hover:border-orange border-2 flex flex-row px-9 py-3 items-center gap-2.5 bg-orange rounded-[15px] text-white justify-center"
+      className="w-full group transition-all duration-500 sm:hover:bg-white sm:hover:border-orange border-2 flex flex-row px-9 py-3 items-center gap-2.5 bg-orange rounded-[15px] text-white justify-center"
     >
       <Image
         src={CallIcon}
@@ -15,9 +15,9 @@ export const ButtonNavPhone = () => {
         width={24}
         height={24}
         loading="eager"
-        className="transition-all duration-500 group-hover:p-1 group-hover:bg-orange rounded-full"
+        className="transition-all duration-500 sm:group-hover:p-1 sm:group-hover:bg-orange rounded-full"
       />
-      <p className="transition-all duration-500 group-hover:text-orange group-hover:!text-[18px] !text-[16px]">
+      <p className="transition-all duration-500 sm:group-hover:text-orange sm:group-hover:!text-[18px] !text-[16px]">
         +48 506 764 009
       </p>
     </Link>
