@@ -89,7 +89,7 @@ export default function Home() {
               <h3 className="text-center">
                 Pierwsze zajęcia grupowe są próbne i darmowe!
               </h3>
-              <ButtonNavRounded href="" label="Zapisz się na zajęcia" />
+              <ButtonNavRounded href="/nauka-plywania#kontakt" label="Zapisz się na zajęcia" />
             </div>
 
             <h2 className="text-center">Zajęcia indywidualne i dwuosobowe</h2>
