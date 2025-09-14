@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import HeroBg from '@/public/assets/images/pool_bg.jpg'
+import HeroBg from '@/public/assets/images/bg-nauka_plywania.webp'
 import BackgroundCrabs from '@/public/assets/images/background_crabs.svg'
 import { ButtonNavRounded } from '@/src/components/ui/buttons/ButtonNavRounded';
 import { GROUPS_LIST } from '@/src/components/Groups/List';
@@ -30,12 +30,12 @@ export default function NaukaPlywania(){
     return(
        <>
     <div className='hidden lg:block fixed h-screen w-screen z-0'>
-      <Image src={BackgroundCrabs} alt='Kraby' fill={true} className='object-contain max-h-screen'/>
+      <Image src={BackgroundCrabs} alt='Kraby' fill={true} className='object-contain max-h-screen' loading='eager'/>
     
     </div>
     <div className="flex flex-col">
 <div className='flex w-full h-screen relative items-center justify-center pt-[162px]'>
-      <Image src={HeroBg} fill alt='Basen Wolbrom'/>
+      <Image src={HeroBg} fill alt='Nauka pływania szkoła Szkrab' className='object-cover' loading='eager' fetchPriority='high'/>
       <div className='flex flex-col z-10 lg:w-[50%] sm:w-[75%] w-[90%] gap-6 items-center justify-center text-center text-white'>
         <h1>Nauka pływania dla Dzieci, Młodzieży i Dorosłych</h1>
         <h3 className='!font-medium'>Pierwsza lekcja grupowa jest DARMOWA</h3>

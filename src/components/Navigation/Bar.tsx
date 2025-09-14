@@ -22,7 +22,7 @@ const onHideMenu = () =>{
     setShowMenu(false)
 }
     return <><div className='box-border border-b-2 border-orange hidden md:flex flex-row flex-wrap gap-2 bg-white w-full py-6 px-12 justify-around lg:justify-between absolute top-0 left-0 z-50'>
-        <Link  href='/'><Image width={300} src={Logo} alt='szkoła pływania szkrab' className='xl:w-[300px] w-[200px]'/></Link>
+        <Link  href='/'><Image width={300} src={Logo} alt='szkoła pływania szkrab' className='xl:w-[300px] w-[200px]' loading='eager' fetchPriority='high'/></Link>
         <nav className='flex flex-row gap-5 items-center justify-center'>
             <Link className={`${pathname==='/nauka-plywania'?'text-orange font-semibold':''} text-[20px] font-medium`} href='/nauka-plywania'>
             Nauka pływania
@@ -40,6 +40,7 @@ const onHideMenu = () =>{
         </div>
         
     </div>
+    <Image width={150} src={Logo} alt='szkoła pływania szkrab' className='md:hidden block absolute left-8 top-8 z-30' loading='eager' fetchPriority='high'/>
     <button onClick={onShowMenu} className='rounded-full cursor-pointer block md:hidden fixed top-8 right-8 z-30 p-3 bg-orange'><Image src={MenuIcon} width={32} height={32} alt='Menu'/></button>
    {showMenu&&<div className='p-8 fixed z-40 top-0 left-0 w-screen h-screen bg-white flex flex-col justify-between items-center'>
     <button onClick={onHideMenu} className='cursor-pointer self-end'><Image src={CloseIcon} width={48} height={48} alt='Close'/></button>

@@ -1,9 +1,9 @@
-import HeroBg from '@/public/assets/images/pool_bg.jpg'
+import HeroBg from '@/public/assets/images/bg-home.webp'
 import Image from 'next/image';
 import { ButtonNavRounded } from '../components/ui/buttons/ButtonNavRounded';
 import BackgroundCrabs from '@/public/assets/images/background_crabs.svg'
 import { WhyUs } from '../components/WhyUs/WhyUs';
-import JustynaImg from '@/public/assets/images/justyna.jpg'
+import JustynaImg from '@/public/assets/images/Justyna.webp'
 import { GROUPS_LIST } from '../components/Groups/List';
 import { GroupLink } from '../components/Groups/GroupLink';
 import { Metadata } from 'next';
@@ -35,7 +35,7 @@ export default function Home() {
     </div>
     <div className="flex flex-col">
     <div className='flex w-full h-screen relative items-center justify-center pt-[162px]'>
-      <Image src={HeroBg} fill alt='Basen Wolbrom'/>
+      <Image src={HeroBg} fill alt='Nauka pływania szkoła Szkrab' className='object-cover' fetchPriority='high' loading='eager'/>
       <div className='flex flex-col z-10 lg:w-[50%] sm:w-[75%] w-[90%] gap-6 items-center justify-center text-center text-white'>
         <h1>Nauka pływania na basenie w Wolbromiu</h1>
         <h3 className='!font-medium'>Oferujemy zajęcia nauki pływania w kameralnych grupach oraz w formie lekcji indywidualnych i dwuosobowych. Pierwsze zajęcia grupowe są darmowe.</h3>
@@ -80,7 +80,7 @@ export default function Home() {
         <p className='text-center lg:text-left'>Nazywam się Justyna Jurczyk, jestem magistrem wychowania fizycznego, instruktorką sportu o specjalizacji pływanie oraz instruktorką nauki pływania niemowląt. Swoją przygodę z pływaniem rozpoczęłam jako 7 letnia zawodniczka lokalnego klubu KS Wiking. Regularna aktywność fizyczna wdrażana od najmłodszych lat rozbudziła  we mnie pasję do sportu oraz chęć jej dzielenia z innymi. Od ponad 6 lat prowadzę zajęcia nauki pływania dla dzieci powyżej 3 roku życia, młodzieży oraz osób dorosłych na każdym poziomie zaawansowania. Obecnie jestem również nauczycielem pływania w Krakowskim Szkolnym Ośrodku Sportu. </p>
        <p className='text-center lg:text-left'>Zapraszam Cię na organizowane przeze mnie zajęcia nauki pływania na basenie w Wolbromiu! </p>
         </div>
-        <Image src={JustynaImg} alt='Justyna' width={545} height={727} className='xl:w-[500px] h-fit lg:w-[40%] w-[90%] object-contain rounded-[80px]'/>
+        <Image src={JustynaImg} alt='Justyna' width={545} height={727} className='xl:w-[500px] h-fit lg:w-[40%] w-[90%] sm:w-[50%] object-contain rounded-[80px]'/>
       </div>
       </div>
      
