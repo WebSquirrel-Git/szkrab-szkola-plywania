@@ -1,80 +1,78 @@
-h1{
-    font-size: 64px;
-    font-weight: bold;
+h1 {
+  font-size: 64px;
+  font-weight: bold;
 }
-h2{
-   font-size: 48px;
-    font-weight: bold; 
+h2 {
+  font-size: 48px;
+  font-weight: bold;
 }
-h3{
-    font-size: 32px;
-    font-weight: bold; 
+h3 {
+  font-size: 32px;
+  font-weight: bold;
 }
-h4{
-    font-size: 20px;
-    font-weight:500; 
+h4 {
+  font-size: 20px;
+  font-weight: 500;
 }
-p{
-    font-size: 20px;
-    font-weight: 500;
+p {
+  font-size: 20px;
+  font-weight: 500;
 }
 @media only screen and (max-width: 1536px) {
-    h1{
-        font-size: 56px;
-    }
-    h2{
-        font-size: 40px;
-    }
-    h3{
-        font-size: 28px;
-    }
-
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 28px;
+  }
 }
 @media only screen and (max-width: 1280px) {
-    h1{
-        font-size: 48px;
-    }
-    h2{
-        font-size: 40px;
-    }
-    h3{
-        font-size: 24px;
-    }
-
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 1024px) {
-  h1{
-        font-size: 40px;
-    }
-    h2{
-        font-size: 32px;
-    }
-    h3{
-        font-size: 24px;
-    }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 768px) {
- h1{
-        font-size: 32px;
-    }
-    h2{
-        font-size: 26px;
-    }
-    h3{
-        font-size: 20px;
-    }
-    p{
-        font-size: 16px;
-    }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 640px) {
-    h3{
-        font-size: 16px;
-    }
-    h4{
-        font-size: 14px;
-    }
-p{
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
     font-size: 14px;
-}
+  }
+  p {
+    font-size: 14px;
+  }
 }

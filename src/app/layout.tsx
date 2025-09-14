@@ -1,10 +1,9 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Bar } from '../components/Navigation/Bar';
-import { Footer } from '../components/Footer/Footer';
+import type {Metadata} from 'next';
+import './globals.css';
+import {Bar} from '../components/Navigation/Bar';
+import {Footer} from '../components/Footer/Footer';
 import dynamic from 'next/dynamic';
-
-
+import {GoogleAnalytics} from '@next/third-parties/google';
 
 export const metadata: Metadata = {
   title: {
@@ -39,11 +38,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <CookiesPopup/>
-        <Bar/>
+        <CookiesPopup />
+        <Bar />
         {/* Padding top 161px */}
         {children}
-        <Footer/>
+        <Footer />
+        <GoogleAnalytics gaId="G-QNXJD7X222" />
       </body>
     </html>
   );

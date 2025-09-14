@@ -11,6 +11,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: 'https://szkolaplywaniaszkrab.pl/baseny/wolbrom/',
     },
-   
   ];
 }
