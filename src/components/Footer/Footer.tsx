@@ -61,7 +61,7 @@ export const Footer = () => {
           +48 506 764 009
         </Link>
         <div className="flex flex-row gap-2">
-          <Link className="cursor-pointer text-[16px] font-medium" href="">
+          <Link className="cursor-pointer text-[16px] font-medium" href="https://www.facebook.com/profile.php?id=61580611501476">
             <Image
               src={FacebookIcon}
               alt="Szkrab Facebook"
@@ -70,7 +70,7 @@ export const Footer = () => {
               loading="lazy"
             />
           </Link>
-          <Link className="cursor-pointer text-[16px] font-medium" href="">
+          <Link className="cursor-pointer text-[16px] font-medium" href="https://www.instagram.com/szkola_szkrab/">
             <Image
               src={InstagramIcon}
               alt="Szkrab Instagram"
