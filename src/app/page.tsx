@@ -3,7 +3,7 @@ import Image from 'next/image';
 import {ButtonNavRounded} from '../components/ui/buttons/ButtonNavRounded';
 import BackgroundCrabs from '@/public/assets/images/background_crabs.svg';
 import {WhyUs} from '../components/WhyUs/WhyUs';
-import JustynaImg from '@/public/assets/images/Justyna.webp';
+import JustynaImg from '@/public/assets/images/Justyna_2.webp';
 import {GROUPS_LIST} from '../components/Groups/List';
 import {GroupLink} from '../components/Groups/GroupLink';
 import {Metadata} from 'next';
