@@ -1,11 +1,11 @@
 import {NextResponse} from 'next/server';
-import nodemailer from "nodemailer";
+import nodemailer from 'nodemailer';
 export const runtime = 'nodejs';
 export async function POST(req: Request) {
   try {
-    const {name,telephone,email,lessonType,swimmingSkill,age} = await req.json();
+    const {name, telephone, email, lessonType, swimmingSkill, age} =
+      await req.json();
 
- 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
