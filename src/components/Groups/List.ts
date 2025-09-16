@@ -25,8 +25,8 @@ export const GROUPS_LIST = [
     age: '5-6 lat',
     icon: KrabyIcon,
     list: [
-      'Czas zajęć 30 minut',
-      'Wielkość grupy 4 kursantów',
+      'Czas zajęć 45 minut',
+      'Wielkość grupy 6 kursantów',
       'Zajęcia bez udziału rodziców',
       'Instruktor jest z dziećmi w wodzie',
     ],
@@ -38,9 +38,9 @@ export const GROUPS_LIST = [
     age: '7-10 lat',
     icon: OsmiorniceIcon,
     list: [
+      'Czas zajęć 45 minut',
       'Wielkość grupy 6 kursantów',
       'Zajęcia bez udziału rodzica',
-      'Czas zajęć 45 minut',
       'Instruktor jest z dziećmi w wodzie',
     ],
     description:
@@ -51,9 +51,9 @@ export const GROUPS_LIST = [
     age: 'średniozaawansowana',
     icon: DelfinyIcon,
     list: [
+      'Czas zajęć 45 minut',
       'Wielkość grupy 6 kursantów',
       'Zajęcia bez udziału rodzica',
-      'Czas zajęć 45 minut',
       'Instruktor prowadzi zajęcia z brzegu',
     ],
     description:
@@ -64,9 +64,9 @@ export const GROUPS_LIST = [
     age: 'zaawansowana',
     icon: RekinyIcon,
     list: [
+      'Czas zajęć 45 minut',
       'Wielkość grupy 6 kursantów',
       'Zajęcia bez udziału rodzica',
-      'Czas zajęć 45 minut',
       'Instruktor prowadzi zajęcia z brzegu',
     ],
     description:
@@ -77,8 +77,8 @@ export const GROUPS_LIST = [
     age: '18-99 lat',
     icon: DorosliIcon,
     list: [
-      'Wielkość grupy 6 kursantów',
       'Czas zajęć 45 minut',
+      'Wielkość grupy 6 kursantów',
       'Instruktor prowadzi zajęcia z brzegu lub z wody w zależności od potrzeb kursantów',
     ],
     description:
@@ -89,8 +89,8 @@ export const GROUPS_LIST = [
     age: '',
     icon: IndywidualneIcon,
     list: [
+      'Czas zajęć 45 minut',
       'Zajęcia instruktor + kursant',
-      'Czas trwania 45 minut',
       'Instruktor prowadzi zajęcia z brzegu lub z wody w zależności od potrzeb kursanta',
     ],
     description:
@@ -101,8 +101,8 @@ export const GROUPS_LIST = [
     age: '',
     icon: DwuosoboweIcon,
     list: [
+      'Czas zajęć 45 minut',
       'Instruktor + dwójka kursantów',
-      'Czas trwania 45 minut',
       'Instruktor prowadzi zajęcia z brzegu lub z wody w zależności od potrzeb kursanta',
     ],
     description:
