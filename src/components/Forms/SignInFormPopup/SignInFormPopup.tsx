@@ -29,7 +29,7 @@ export const SignInFormPopup = ({
   groupName,
   onHide,
 }: SignInFormPopupProps) => {
-  const [status, setStatus] = useState('Wyślij wiadomość');
+  const [status, setStatus] = useState('Wyślij zgłoszenie');
   const {
     register,
     handleSubmit,
@@ -72,7 +72,7 @@ export const SignInFormPopup = ({
       setStatus('Wiadomość wysłana');
 
       setTimeout(() => {
-        setStatus('Wyślij wiadomość');
+        setStatus('Wyślij zgłoszenie');
         reset();
         onHide();
       }, 3000);
