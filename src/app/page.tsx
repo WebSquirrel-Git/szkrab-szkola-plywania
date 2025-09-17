@@ -75,7 +75,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col  w-full 2xl:pl-[250px] 2xl:pr-[250px] lg:pl-[130px] lg:pr-[130px] justify-center items-center">
-          <div className="flex flex-col w-full py-[100px] lg-px-0 px-4 items-center md:gap-[100px] gap-[50px] z-10">
+          <div className="flex flex-col w-full py-[100px] lg-px-0 px-4 items-center md:gap-[75px] gap-[50px] z-10">
             <WhyUs />
             <h2 className="text-center">Podział zajęć grupowych</h2>
             <div className="flex flex-col gap-8 justify-center items-center">
@@ -89,7 +89,10 @@ export default function Home() {
               <h3 className="text-center">
                 Pierwsze zajęcia grupowe są próbne i darmowe!
               </h3>
-              <ButtonNavRounded href="/nauka-plywania#kontakt" label="Zapisz się na zajęcia" />
+              <ButtonNavRounded
+                href="/nauka-plywania#kontakt"
+                label="Zapisz się na zajęcia"
+              />
             </div>
 
             <h2 className="text-center">Zajęcia indywidualne i dwuosobowe</h2>

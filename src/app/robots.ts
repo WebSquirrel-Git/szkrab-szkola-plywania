@@ -6,7 +6,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/assets/statues/Polityka_prywatności.pdf','/assets/statues/Regulamin Szkoła Pływania Szkrab.pdf'],
+        disallow: [
+          '/assets/statues/Polityka_prywatności.pdf',
+          '/assets/statues/Regulamin Szkoła Pływania Szkrab.pdf',
+        ],
       },
     ],
     sitemap: 'https://szkolaplywaniaszkrab.pl/sitemap.xml',
