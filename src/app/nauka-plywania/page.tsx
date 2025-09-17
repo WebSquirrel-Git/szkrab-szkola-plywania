@@ -7,6 +7,7 @@ import {GroupDescription} from '@/src/components/Groups/GroupDescription';
 import {ContactForm} from '@/src/components/Forms/ContactForm/ContactForm';
 import {ButtonNavPhone} from '@/src/components/ui/buttons/ButtonNavPhone';
 import {Metadata} from 'next';
+import {Schedule} from '@/src/components/Schedule/Schedule';
 
 export const metadata: Metadata = {
   title: 'Nauka pływania w Wolbromiu',
@@ -59,7 +60,9 @@ export default function NaukaPlywania() {
           </div>
         </div>
         <div className="flex flex-col  w-full 2xl:pl-[250px] 2xl:pr-[250px] lg:pl-[130px] lg:pr-[130px] justify-center items-center">
-          <div className="flex flex-col w-full py-[100px] lg-px-0 px-4 items-center md:gap-[100px] gap-[50px] z-10">
+          <div className="flex flex-col w-full py-[100px] lg-px-0 px-4 items-center md:gap-[75px] gap-[50px] z-10">
+            <h2>Harmonogram</h2>
+            <Schedule />
             <h2 id="cennik">Cennik</h2>
             <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-12">
               <div className="flex flex-col gap-4 md:gap-8">
