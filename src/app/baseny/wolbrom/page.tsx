@@ -57,7 +57,7 @@ export default function BasenWolbrom() {
           </div>
         </div>
         <div className="flex flex-col  w-full 2xl:pl-[250px] 2xl:pr-[250px] lg:pl-[130px] lg:pr-[130px] justify-center items-center">
-          <div className="flex flex-col w-full py-[100px] md:px-16 px-4 items-center justify-center md:gap-[75px] gap-[50px] z-10">
+          <div className="flex flex-col w-full py-[100px] md:px-16 px-4 items-center justify-center gap-[50px] z-10">
             <h2>Dane techniczne</h2>
             <div className="flex flex-col sm:flex-row gap-16 w-full justify-center">
               <div className="flex flex-col gap-4 2xl:w-[500px] w-full">

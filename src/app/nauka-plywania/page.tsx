@@ -60,9 +60,19 @@ export default function NaukaPlywania() {
           </div>
         </div>
         <div className="flex flex-col  w-full 2xl:pl-[250px] 2xl:pr-[250px] lg:pl-[130px] lg:pr-[130px] justify-center items-center">
-          <div className="flex flex-col w-full py-[100px] lg-px-0 px-4 items-center md:gap-[75px] gap-[50px] z-10">
+          <div className="flex flex-col w-full py-[100px] lg-px-0 px-4 items-center gap-[50px] z-10">
             <h2>Harmonogram</h2>
+            <p className="text-center">
+              Zajęcia organizowane przez Szkołę pływania Szkrab odybywają się w
+              formie kursów, których daty realizacji są zbieżne z kalendarzem
+              roku szkolnego. Obecny kurs jesienny trwa od 22 września 2025 do 1
+              lutego 2026. Klienci dołączający do kursu w trakcie jego trwania
+              nie są zobowiązani do opłacenia zajęć, które zostały już
+              zrealizowane.{' '}
+            </p>
+
             <Schedule />
+
             <h2 id="cennik">Cennik</h2>
             <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-12">
               <div className="flex flex-col gap-4 md:gap-8">
@@ -108,6 +118,24 @@ export default function NaukaPlywania() {
                 </div>
               </div>
             </div>
+            <h2>Lekcja próbna</h2>
+            <p className="text-center">
+              <b>Pierwsza lekcja grupowa jest próbna i bezpłatna</b>, aby z niej
+              skorzystać należy wybrać odpowiednią grupę oraz termin zajęć,
+              który docelowo będzie stałym terminem zajęć kursanta, a następnie
+              przesłać formularz zgłoszeniowy lub skontaktować się z biurem
+              szkoły w celu rezerwacji miejsca w grupie. Po zapisaniu się na
+              zajęcia, kursant otrzyma miejsce w wybranej grupie od momentu
+              dołączenia do kursu, aż do końca jego trwania, jednak nie będzie
+              zobowiązany do wnoszenia opłaty miesięcznej czy opłaty należnej za
+              pojedyńczą lekcję. Po otrzymaniu potwierdzenia przyjęcia
+              zgłoszenia, kursant bierze udział w pierwszej lekcji próbnej w
+              grupie, która docelowo będzie jego stałą grupą. Po lekcji prosimy
+              o potwierdzenie kontynuacji nauki. W przypadku potwierdzenia
+              kontynuacji nauki, prosimy o wniesienie opłaty należnej za zajęcia
+              z bieżącego miesiąca lub kolejnego miesiąca w przypadku klientów
+              rozpoczynających naukę z końcem miesiąca.
+            </p>
             <h2>Płatności</h2>
             <p className="2xl:!text-[24px] !font-semibold text-center">
               Podane ceny zajęć nie zawierają biletu wstępu na basen. Płatność
