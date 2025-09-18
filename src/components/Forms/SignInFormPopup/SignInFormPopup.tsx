@@ -8,11 +8,13 @@ import SendIcon from '@/public/assets/icons/send-white.svg';
 import Image from 'next/image';
 
 const schema = z.object({
-  name: z.string().min(3, 'Minimalna długość wynosi 3 znaków'),
+  name: z.string().min(6, 'Minimalna długość wynosi 6 znaków'),
+  nameParent: z.string().min(6, 'Minimalna długość wynosi 6 znaków'),
   email: z.email('Niepoprawny email').min(4),
   telephone: z
     .string('niepoprawna wartość')
     .min(9, 'Numer telefonu powinien składać się z min 9 cyfr'),
+  birthDate: z.date(),
 });
 
 type FormFields = z.infer<typeof schema>;
@@ -46,7 +48,7 @@ export const SignInFormPopup = ({
   });
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
-    const {name, telephone, email} = data;
+    const {name, telephone, email, nameParent, birthDate} = data;
     try {
       setStatus('Wysyłanie...');
       const res = await fetch('/api/sign-in', {
@@ -59,6 +61,8 @@ export const SignInFormPopup = ({
           day,
           hours,
           groupName,
+          nameParent,
+          birthDate,
         }),
       });
 
@@ -102,18 +106,45 @@ export const SignInFormPopup = ({
       >
         <div className=" flex flex-col lg:flex-row justify-center w-full lg:gap-6 gap-0 items-center">
           <div className="flex flex-col xl:pr-[50px] xl:w-[40%] sm:w-[400px] w-[80%]">
-            <label className="flex p-2.5 pb-1">Imię</label>
+            <label className="flex p-2.5 pb-1">Imię i nazwisko kursanta</label>
             <div className="w-full h-10 flex flex-row items-center justify-center border-1 border-mint rounded-full py-2.5 gap-3 pl-2.5">
               <input
                 {...register('name')}
                 type="text"
                 className="w-full border-0 outline-none size-4 placeholder-[#B0B0B0] "
-                placeholder="Imię*"
+                placeholder="Imię i nazwisko kursanta*"
               />
             </div>
             {errors.name && (
               <p className="text-red-500 pl-2.5 !text-sm">
                 {errors.name.message}
+              </p>
+            )}
+            <label className="flex p-2.5 pb-1">Data urodzenia kursanta</label>
+            <div className="w-full h-10 flex flex-row items-center pr-4 justify-center border-1 border-mint rounded-full py-2.5 gap-3 pl-2.5">
+              <input
+                {...register('birthDate', {valueAsDate: true})}
+                type="date"
+                className="w-full border-0 outline-none size-4 placeholder-[#B0B0B0] "
+              />
+            </div>
+            {errors.birthDate && (
+              <p className="text-red-500 pl-2.5 !text-sm">
+                {errors.birthDate.message}
+              </p>
+            )}
+            <label className="flex p-2.5 pb-1">Imię i nazwisko opiekuna</label>
+            <div className="w-full h-10 flex flex-row items-center justify-center border-1 border-mint rounded-full py-2.5 gap-3 pl-2.5">
+              <input
+                {...register('nameParent')}
+                type="text"
+                className="w-full border-0 outline-none size-4 placeholder-[#B0B0B0] "
+                placeholder="Imię i nazwisko opiekuna*"
+              />
+            </div>
+            {errors.nameParent && (
+              <p className="text-red-500 pl-2.5 !text-sm">
+                {errors.nameParent.message}
               </p>
             )}
 
