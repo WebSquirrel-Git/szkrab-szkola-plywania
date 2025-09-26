@@ -61,14 +61,19 @@ export default function NaukaPlywania() {
         </div>
         <div className="flex flex-col  w-full 2xl:pl-[250px] 2xl:pr-[250px] lg:pl-[130px] lg:pr-[130px] justify-center items-center">
           <div className="flex flex-col w-full py-[100px] lg-px-0 px-4 items-center gap-[50px] z-10">
-            <h2>Harmonogram</h2>
+            <h2 id="harmonogram">Harmonogram</h2>
             <p className="text-center">
-              Zajęcia organizowane przez Szkołę pływania Szkrab odybywają się w
-              formie kursów, których daty realizacji są zbieżne z kalendarzem
-              roku szkolnego. Obecny kurs jesienny trwa od 22 września 2025 do 1
-              lutego 2026. Klienci dołączający do kursu w trakcie jego trwania
-              nie są zobowiązani do opłacenia zajęć, które zostały już
-              zrealizowane.{' '}
+              Zajęcia organizowane przez Szkołę Pływania Szkrab odybywają się
+              cyklicznie raz w tygodniu w formie kursów, których daty realizacji
+              są zbieżne z kalendarzem roku szkolnego. Obecny kurs jesienny trwa
+              od 22 września 2025 do 1 lutego 2026. Klienci dołączający do kursu
+              w trakcie jego trwania nie są zobowiązani do opłacenia zajęć,
+              które zostały już zrealizowane.
+              <br />
+              <br />
+              <b>
+                Przerwy w kursie: 01.11 | 10-11.11 | 24.12.2025 - 06.01.2026
+              </b>
             </p>
 
             <Schedule />
@@ -118,6 +123,15 @@ export default function NaukaPlywania() {
                 </div>
               </div>
             </div>
+            <p className="text-center">
+              <b>
+                Klienci zobowiązani są do wykupienia biletu wstępu na basen we
+                własnym zakresie. Rodzice chcący wejść z dzieckiem do szatni w
+                celu przygotowania go do zajęć, zobowiązani są do pobrania
+                zegarka z kas basenowych. Cena zegarka wynosi 1 zł, a limit
+                czasu na zegarku to 5 minut.
+              </b>
+            </p>
             <h2>Lekcja próbna</h2>
             <p className="text-center">
               <b>Pierwsza lekcja grupowa jest próbna i bezpłatna</b>, aby z niej
@@ -138,11 +152,12 @@ export default function NaukaPlywania() {
             </p>
             <h2>Płatności</h2>
             <p className="2xl:!text-[24px] !font-semibold text-center">
-              Podane ceny zajęć nie zawierają biletu wstępu na basen. Płatność
-              za zajęcia jest miesięczna i należy uregulować ją z góry do 10
-              dnia każdego miesiąca. Opłata miesięczna to cena pojedynczej
-              lekcji pomnożona przez liczbę spotkań zaplanowaną w ramach
-              miesiąca. Wysokość opłaty należnej za dany miesiąc klienci
+              Podane ceny zajęć nie zawierają biletu wstępu na basen. Klienci
+              zobowiązani są do wykupienia biletu wstępu na basen we własnym
+              zakresie. Płatność za zajęcia jest miesięczna i należy uregulować
+              ją z góry do 10 dnia każdego miesiąca. Opłata miesięczna to cena
+              pojedynczej lekcji pomnożona przez liczbę spotkań zaplanowaną w
+              ramach miesiąca. Wysokość opłaty należnej za dany miesiąc klienci
               otrzymają na początku każdego miesiąca drogą mailową.
             </p>
             <div className="flex flex-col md:gap-8 gap-4 items-center">
@@ -151,7 +166,7 @@ export default function NaukaPlywania() {
               </h3>
               <ButtonNavRounded
                 label="Zapisz się na darmową lekcję próbną"
-                href=""
+                href="#harmonogram"
               />
             </div>
             <h2 id="grupy">Podział grup</h2>
