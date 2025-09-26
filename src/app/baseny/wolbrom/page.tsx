@@ -122,19 +122,21 @@ export default function BasenWolbrom() {
                 zawiera się czas lekcji oraz czas na przygotowanie się do zajęć
                 oraz przebranie się po lekcji. W momencie przekroczenia limitu
                 czasu (70 min) klient opłaca każdą przekroczoną minutę, zgodnie
-                z obowiązującym cennikiem pływalni. Rodzic może wejść bezpłatnie
-                z dzieckiem do szati i pomóc mu w przygotowaniu się do lekcji.
+                z obowiązującym cennikiem pływalni. Rodzic chcący wejść z
+                dzieckiem do szatni w celu przygotowania go do zajęć,
+                zobowiązany jest do pobrania zegarka z kas basenowych. Cena
+                zegarka wynosi 1 zł, a limit czasu na zegarku to 5 minut.
                 Instruktor odbiera dzieci od opiekuna w miejscu wyjscia z szatni
                 na nieckę basenową punktualnie o wyznaczonej godzinie zajęć oraz
-                w to sammo miesjce odprowadza kursanta po zakończeniu lekcji.
+                w to samo miejsce odprowadza kursanta po zakończeniu lekcji.
                 Rodzic ma obowiązek odebrać dziecko od instruktora niezwłocznie
                 po zakończeniu lekcji. Zalecamy, aby przed zajęciami dzieci
                 skorzystały z toalety. Przed wejściem na pływalnie należy
                 dokładnie opłukać ciało pod prysznicem. Na niecce basenowej mogą
                 przebywać wyłącznie osoby, które wykupiły bilet wstępu na basen
                 oraz przebrane są w strój kompielowy. Rodzice mogą obserwować
-                zajęcia swoich z przeszklonego miejsca znajdującego się na
-                terenie kawiarni.
+                zajęcia swoich dzieci z przeszklonego miejsca, znajdującego się
+                na terenie kawiarni.
               </p>
             </div>
             <h2>Zapisz się na zajęcia</h2>
